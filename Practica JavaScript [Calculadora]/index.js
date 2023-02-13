@@ -31,7 +31,7 @@ let multiply = document.getElementById('multiply');
 let equal = document.getElementById('equal');
 let deleteNumber = document.getElementById('Delete');
 let coma = document.getElementById('coma');
-let potencia = document.getElementById('Potencia');
+let potencia = document.getElementById('potencia');
 let residue = document.getElementById('residue');
 let raiz = document.getElementById('Raiz')
 
@@ -82,6 +82,9 @@ divide.addEventListener("click", function(){
 coma.addEventListener("click", function(){
     takeValue(".");
 })
+residue.addEventListener("click", function(){
+    takeValue("%");
+})
 potencia.addEventListener("click", function(){
     takeValue("**");
 })
@@ -98,4 +101,3 @@ equal.addEventListener("click", function(){
 deleteNumber.addEventListener("click", function(){
     clearInput()
 })
-
